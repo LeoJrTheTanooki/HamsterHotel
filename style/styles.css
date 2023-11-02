@@ -11,6 +11,10 @@ h1, h2{
     text-align: center;
 }
 
+.price{
+    color: #1F51A8;
+}
+
 p, li{
     font: normal normal normal 16px/20px 'Source Sans 3';
 }

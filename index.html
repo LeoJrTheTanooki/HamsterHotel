@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>La Petite Maison</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,42 +24,44 @@
     />
     <!-- Google Fonts End -->
     <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="icon" href="./assets/HamsterIcon.png" type="image/x-icon" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="border: solid">
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #000324">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav dosis">
-            <a class="nav-link" href="#">Overview</a>
-            <a class="nav-link" href="#">Rooms</a>
-            <a class="nav-link" href="#">Packages</a>
-            <a class="navbar-brand" href="#">La Petite Maison</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+          <div class="navbar-nav mx-auto align-items-end dosis">
+            <a class="nav-link px-4" style="color: white" href="#">Overview</a>
+            <a class="nav-link px-4" style="color: white" href="#">Rooms</a>
+            <a class="nav-link px-4" style="color: white" href="#">Packages</a>
+            <a class="navbar-brand px-4" href="#">
+              <img
+                src="/assets/Logo.png"
+                alt="La Petite Maison"
+                height="100px"
+              />
+            </a>
+            <a class="nav-link px-4" style="color: white" href="#">Amenities</a>
+            <a class="nav-link px-4" style="color: white" href="#">Contact</a>
+            <a
+              class="nav-link px-4"
+              style="color: white; outline: solid 2px"
+              href="#"
+              >Reserve</a
             >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="nav-link" href="#">Amenities</a>
-            <a class="nav-link" href="#">Contact</a>
-            <a class="nav-link" href="#">Reserve</a>
           </div>
         </div>
       </div>
     </nav>
+
     <!-- Navbar End -->
 
     <!-- Header -->
     <div
       class="container-fluid d-flex"
       style="
-        border: solid;
         background-image: url(./assets/header.jpg);
         object-fit: cover;
         background-repeat: no-repeat;
@@ -69,35 +71,59 @@
       "
     >
       <div
-        class="row m-auto"
+        class="row m-auto align-items-center"
         style="
           height: 232px;
           background-color: rgb(0, 3, 36, 0.8);
           color: white;
         "
       >
-        <h1>Run on the wheel of luxury</h1>
-        <p>Explore everything the beach has to offer in our relaxing resort</p>
+        <h1 class="text-center mt-5">Run on the wheel of luxury</h1>
+        <p class="text-center mb-5">
+          Explore everything the beach has to offer in our relaxing resort
+        </p>
       </div>
     </div>
     <!-- Header End -->
 
     <!-- Welcome -->
-    <div class="container">
-      <div class="row" style="border: solid">
-        <div class="col"><img src="./assets/hamsterhomejpg.jpg" alt=""></div>
-        <div class="col-8">
-          <h2 style="text-align: start">Welcome to a hamster's paradise</h2>
-          <p>
-            Nestled in the heart of Cavia California, La Petite Maison is a
-            luxury hotel designed for the small mammal with extravagance in
-            mind. Escape to the warm comforts of stunning rooms, a relaxing spa,
-            and a pool with a beach side view. Inspired by the warm beauty of
-            the California Coast, we invite you to enjoy the rich accommodations
-            along with our unmatched luxury. Discover the satisfaction of
-            indulging in our quality rooms, and thank you for choosing La Petite
-            Maison.
-          </p>
+    <div class="container p-5">
+      <div class="row m-auto text-center">
+        <div class="col">
+          <img
+            src="./assets/hamsterhomejpg.jpg"
+            alt=""
+            height="400vh"
+            width="350vw"
+          />
+        </div>
+        <div class="col align-self-center">
+          <div class="row">
+            <h2 style="text-align: start">Welcome to a hamster's paradise</h2>
+            <p>
+              Nestled in the heart of Cavia California, La Petite Maison is a
+              luxury hotel designed for the small mammal with extravagance in
+              mind. Escape to the warm comforts of stunning rooms, a relaxing
+              spa, and a pool with a beach side view.
+            </p>
+            <p>
+              Inspired by the warm beauty of the California Coast, we invite you
+              to enjoy the rich accommodations along with our unmatched luxury.
+              Discover the satisfaction of indulging in our quality rooms, and
+              thank you for choosing La Petite Maison.
+            </p>
+          </div>
+          <div class="row m-auto text-center">
+            <div class="col align-self-center">
+              <img src="./assets/awardfinest.png" alt="" />
+            </div>
+            <div class="col align-self-center">
+              <img src="./assets/awardsatisfaction.png" alt="" />
+            </div>
+            <div class="col align-self-center">
+              <img src="./assets/awardgenuine.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -119,7 +145,7 @@
       <div class="container">
         <div class="row m-auto">
           <div class="col d-flex justify-content-center">
-            <div class="card" style="width: 369px">
+            <div class="card mb-3" style="width: 370px">
               <img
                 src="./assets/room1.jpg"
                 class="card-img-top"
@@ -139,7 +165,7 @@
 
                 <a
                   href="#"
-                  class="btn btn-primary mt-auto rounded-0"
+                  class="btn btn-primary mb-3 rounded-0"
                   style="width: 150px; font-weight: bolder"
                   >Reserve</a
                 >
@@ -147,7 +173,7 @@
             </div>
           </div>
           <div class="col d-flex justify-content-center">
-            <div class="card" style="width: 369px">
+            <div class="card mb-3" style="width: 369px">
               <img
                 src="./assets/room3.jpg"
                 class="card-img-top"
@@ -175,7 +201,7 @@
             </div>
           </div>
           <div class="col d-flex justify-content-center">
-            <div class="card" style="width: 369px">
+            <div class="card mb-3" style="width: 369px">
               <img
                 src="./assets/room2.jpg"
                 class="card-img-top"
@@ -210,13 +236,197 @@
         </div>
       </div>
     </div>
+
     <!-- Reservations End -->
 
-    <div class="container" style="border: solid">Packages</div>
-    <div class="container-fluid" style="border: solid">Amenities</div>
-    <div class="container" style="border: solid">Reserve a Room</div>
-    <div class="container-fluid" style="border: solid">
-      ©LA PETITE MAISON HOTELS LIMITED 1939-2018. ALL RIGHTS RESERVED.
+    <!-- Packages -->
+    <div class="container p-5">
+      <h1 class="text-center mb-4">Packages</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <img src="./assets/hamsterwedding.jpg" alt="" width="100%" />
+          </div>
+          <div class="col-6">
+            <h5 style="text-align: start">Beach Wedding package</h5>
+            <br />
+            <p class="price">Starting US $1,500.00</p>
+            <br />
+            <p>
+              Feel the warmth of the beach as the flames in your hearts ignite
+              during our romantic beach side wedding. All wedding packages
+              include catering, an open bar, and one tier wedding cake (9"
+              Vanilla standard cake). A private dinner for your closets family
+              members and friends will be provided after the ceremony.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h5 style="text-align: start">Full Bloom Package</h5>
+            <br />
+            <p class="price">Starting US $1,000.00</p>
+            <br />
+            <p>
+              Enjoy the shade of our cherry trees as you join us during our
+              spring time celebration. We invite you to our orchards for cherry,
+              strawberry, and apple picking that is open all day. We end each
+              evening with fresh, vegetable centric dinners along with a live
+              show from local musicians.
+            </p>
+          </div>
+          <div class="col-6">
+            <img src="./assets/hamsterspring.jpg" alt="" width="100%" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img src="./assets/hamstercheese.jpg" alt="" width="100%" />
+          </div>
+          <div class="col-6">
+            <h5 style="text-align: start">Cheese and Seed Tour Package</h5>
+            <br />
+            <p class="price">Starting US $1,200.00</p>
+            <br />
+            <p>
+              Immerse yourself in the flavors of Cavia with our Cheese and Seed
+              tour. We consulted with connoisseurs from around the globe to
+              bring you the best flavors that nature has to offer, and create
+              our cheeses right here at our local creamery. Cheese and seeds are
+              served all day and nightly spa treatment is provided after dinner.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Packages End -->
+
+    <!-- Amenities -->
+    <div
+      class="container-fluid"
+      style="
+        background-image: url(./assets/bg.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px;
+      "
+    >
+      <h2 style="color: white">Amenities</h2>
+      <p style="color: white; text-align: center">
+        Here at La Petite Maison, we invite you to enjoy our services in hopes
+        that you have the most relaxing stay we can provide.
+      </p>
+
+      <div class="row m-auto text-center">
+        <div class="col">
+          <img src="./assets/24hour.png" alt="" height="100px" />
+          <br />
+          <p style="color: white; margin-top: 10%; font-weight: bold">
+            24 Hour Room Service
+          </p>
+        </div>
+        <div class="col text-center">
+          <img src="./assets/breakfast.png" alt="" height="100px" />
+          <br />
+          <p style="color: white; margin-top: 10%; font-weight: bold">
+            Complimentary Breakfast
+          </p>
+        </div>
+        <div class="col text-center">
+          <img src="./assets/valet.png" alt="" height="100px" />
+          <br />
+          <p style="color: white; margin-top: 10%; font-weight: bold">
+            Valet Parking
+          </p>
+        </div>
+        <div class="col text-center">
+          <img src="./assets/pool.png" alt="" height="100px" />
+          <br />
+          <p style="color: white; margin-top: 10%; font-weight: bold">
+            Beachside Pool
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Amenities End -->
+
+    <div
+      class="container"
+      style="background-color: #000324; margin-top: 4%; margin-bottom: 4%"
+    >
+      <div class="row">
+        <h2 style="color: white">Reserve a Room</h2>
+        <div class="container d-flex justify-content-center">
+          <div class="row">
+            <div class="col mt-auto mb-3">
+              <form>
+                <div>
+                  <label class="form-label source" style="color: white"
+                    >Check-In</label
+                  >
+                  <input type="text" class="form-control rounded-0" />
+                </div>
+              </form>
+            </div>
+            <div class="col mt-auto mb-3">
+              <form>
+                <div>
+                  <label class="form-label source" style="color: white"
+                    >Check-Out</label
+                  >
+                  <input type="text" class="form-control rounded-0" />
+                </div>
+              </form>
+            </div>
+            <div class="col mt-auto mb-3">
+              <form>
+                <div>
+                  <label class="form-label source" style="color: white"
+                    >Number of Guests</label
+                  >
+                  <input type="text" class="form-control rounded-0" />
+                </div>
+              </form>
+            </div>
+            <div class="col mt-auto mb-3">
+              <form>
+                <div>
+                  <label class="form-label source" style="color: white"
+                    >Room Type</label
+                  >
+                  <input type="text" class="form-control rounded-0" />
+                </div>
+              </form>
+            </div>
+            <div class="col mt-auto mb-3">
+              <button type="submit" class="btn btn-primary fw-bold">
+                Check Availability
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <img
+          src="./assets/hamsterreserve.jpg"
+          alt=""
+          class="px-0"
+          style="height: 190px; object-fit: cover"
+        />
+      </div>
+    </div>
+    <div
+      class="container-fluid"
+      style="background-color: #000324; text-align: center; padding-bottom: 5%"
+    >
+      <img src="./assets/Logo.png" alt="" />
+      <p style="color: white">
+        123 Sunflower Seed Rd., Cavia, California 95205
+      </p>
+      <p style="color: white">
+        ©LA PETITE MAISON HOTELS LIMITED 1939-2018. ALL RIGHTS RESERVED.
+      </p>
     </div>
 
     <script
