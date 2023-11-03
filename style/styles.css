@@ -22,3 +22,7 @@ p, li{
 h5{
     font: normal normal normal 25px/32px 'Dosis';
 }
+
+a.nav-link:hover{
+    outline: white solid 1px;
+}

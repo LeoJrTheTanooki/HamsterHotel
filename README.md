@@ -4,7 +4,7 @@
 
  // Hamster Hotel
 
- // Brief Description of what you did. 
+ // Made a website based off of the prototype given with given assets and Bootstrap
 
  // Peer Reviewer: Jesus Lares 
 
