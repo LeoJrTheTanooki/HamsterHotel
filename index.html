@@ -27,30 +27,74 @@
     <link rel="icon" href="./assets/HamsterIcon.png" type="image/x-icon" />
   </head>
   <body>
+    <!-- style="background-color: #000324" -->
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg" style="background-color: #000324">
+    <nav
+      id="navbar"
+      class="navbar navbar-dark navbar-expand-lg"
+      style="background-color: #000324"
+    >
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav mx-auto align-items-end dosis">
-            <a class="nav-link px-4" style="color: white" href="#">Overview</a>
-            <a class="nav-link px-4" style="color: white" href="#">Rooms</a>
-            <a class="nav-link px-4" style="color: white" href="#">Packages</a>
-            <a class="navbar-brand px-4" href="#">
-              <img
-                src="/assets/Logo.png"
-                alt="La Petite Maison"
-                height="100px"
-              />
-            </a>
-            <a class="nav-link px-4" style="color: white" href="#">Amenities</a>
-            <a class="nav-link px-4" style="color: white" href="#">Contact</a>
-            <a
-              class="nav-link px-4"
-              style="color: white; outline: solid 2px"
-              href="#"
-              >Reserve</a
-            >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" style="color: white"></span>
+        </button>
+        <div class="navbar-toggler">
+          <a class="navbar-brand mx-auto" href="#"
+            ><img src="/assets/Logo.png" alt="La Petite Maison" height="100px"
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <div class="navbar-nav mx-auto">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-end dosis">
+              <li class="nav-item me-auto">
+                <a class="nav-link px-4" style="color: white" href="#"
+                  >Overview</a
+                >
+              </li>
+              <li class="nav-item me-auto">
+                <a class="nav-link px-4" style="color: white" href="#">Rooms</a>
+              </li>
+              <li class="nav-item me-auto">
+                <a class="nav-link px-4" style="color: white" href="#"
+                  >Packages</a
+                >
+              </li>
+              <li class="nav-item me-auto collapse navbar-collapse">
+                <a class="navbar-brand px-4" href="#"
+                  ><img
+                    src="/assets/Logo.png"
+                    alt="La Petite Maison"
+                    height="100px"
+                /></a>
+              </li>
+              <li class="nav-item me-auto">
+                <a class="nav-link px-4" style="color: white" href="#"
+                  >Amenities</a
+                >
+              </li>
+              <li class="nav-item me-auto">
+                <a class="nav-link px-4" style="color: white" href="#"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item me-auto">
+                <a
+                  class="nav-link px-4"
+                  style="color: white; outline: solid 2px"
+                  href="#"
+                  >Reserve</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -60,6 +104,7 @@
 
     <!-- Header -->
     <div
+      id="header"
       class="container-fluid d-flex"
       style="
         background-image: url(./assets/header.jpg);
@@ -87,26 +132,29 @@
     <!-- Header End -->
 
     <!-- Welcome -->
-    <div class="container p-5">
+    <div id="welcome" class="container p-5">
       <div class="row m-auto text-center">
-        <div class="col">
+        <div class="col-md-auto order-2 order-md-1">
           <img
+            class="text-center mt-4"
             src="./assets/hamsterhomejpg.jpg"
             alt=""
-            height="400vh"
-            width="350vw"
+            style="max-width: 100%; max-height: 400px"
           />
         </div>
-        <div class="col align-self-center">
+        <div
+          class="col order-1 order-md-2 align-self-center"
+          style="width: 100%"
+        >
           <div class="row">
             <h2 style="text-align: start">Welcome to a hamster's paradise</h2>
-            <p>
+            <p style="text-align: start">
               Nestled in the heart of Cavia California, La Petite Maison is a
               luxury hotel designed for the small mammal with extravagance in
               mind. Escape to the warm comforts of stunning rooms, a relaxing
               spa, and a pool with a beach side view.
             </p>
-            <p>
+            <p style="text-align: start">
               Inspired by the warm beauty of the California Coast, we invite you
               to enjoy the rich accommodations along with our unmatched luxury.
               Discover the satisfaction of indulging in our quality rooms, and
@@ -129,8 +177,9 @@
     </div>
     <!-- Welcome End -->
 
-    <!-- Reservations -->
+    <!-- Rooms -->
     <div
+      id="rooms"
       class="container-fluid"
       style="
         background-image: url(./assets/bg2.jpg);
@@ -237,17 +286,17 @@
       </div>
     </div>
 
-    <!-- Reservations End -->
+    <!-- Rooms End -->
 
     <!-- Packages -->
-    <div class="container p-5">
+    <div id="packages" class="container p-5">
       <h1 class="text-center mb-4">Packages</h1>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 d-none d-md-block">
             <img src="./assets/hamsterwedding.jpg" alt="" width="100%" />
           </div>
-          <div class="col-6">
+          <div class="col my-auto">
             <h5 style="text-align: start">Beach Wedding package</h5>
             <br />
             <p class="price">Starting US $1,500.00</p>
@@ -262,7 +311,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-6">
+          <div class="col my-auto">
             <h5 style="text-align: start">Full Bloom Package</h5>
             <br />
             <p class="price">Starting US $1,000.00</p>
@@ -275,17 +324,18 @@
               show from local musicians.
             </p>
           </div>
-          <div class="col-6">
+          <div class="col-6 d-none d-md-block">
             <img src="./assets/hamsterspring.jpg" alt="" width="100%" />
           </div>
         </div>
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 d-none d-md-block">
             <img src="./assets/hamstercheese.jpg" alt="" width="100%" />
           </div>
-          <div class="col-6">
+          <div class="col my-auto">
             <h5 style="text-align: start">Cheese and Seed Tour Package</h5>
             <br />
+
             <p class="price">Starting US $1,200.00</p>
             <br />
             <p>
@@ -303,6 +353,7 @@
 
     <!-- Amenities -->
     <div
+      id="amenities"
       class="container-fluid"
       style="
         background-image: url(./assets/bg.jpg);
@@ -351,11 +402,13 @@
     </div>
     <!-- Amenities End -->
 
+    <!-- Reserve -->
     <div
+      id="reserve"
       class="container"
       style="background-color: #000324; margin-top: 4%; margin-bottom: 4%"
     >
-      <div class="row">
+      <div class="row p-3">
         <h2 style="color: white">Reserve a Room</h2>
         <div class="container d-flex justify-content-center">
           <div class="row">
@@ -400,34 +453,42 @@
               </form>
             </div>
             <div class="col mt-auto mb-3">
-              <button type="submit" class="btn btn-primary fw-bold">
-                Check Availability
-              </button>
+              <a href="#">
+                <button type="submit" class="btn btn-primary fw-bold">
+                  Check Availability
+                </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row d-none d-md-block">
         <img
           src="./assets/hamsterreserve.jpg"
           alt=""
           class="px-0"
-          style="height: 190px; object-fit: cover"
+          style="height: 500px; object-fit: cover"
         />
       </div>
     </div>
+    <!-- Reserve End -->
+
+    <!-- Footer -->
     <div
-      class="container-fluid"
-      style="background-color: #000324; text-align: center; padding-bottom: 5%"
+      id="footer"
+      class="container-fluid pt-3 pb-5"
+      style="background-color: #000324; text-align: center"
     >
       <img src="./assets/Logo.png" alt="" />
+      <br /><br />
       <p style="color: white">
         123 Sunflower Seed Rd., Cavia, California 95205
       </p>
-      <p style="color: white">
+      <p style="color: white" class="pb-4">
         ©LA PETITE MAISON HOTELS LIMITED 1939-2018. ALL RIGHTS RESERVED.
       </p>
     </div>
+    <!-- Footer End -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
